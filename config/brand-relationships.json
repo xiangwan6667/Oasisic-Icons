@@ -1907,6 +1907,25 @@
       "physical_parent": null
     },
     {
+      "child": "GoogleScholar",
+      "display_name": "Google Scholar",
+      "category": "Google",
+      "entity_type": "product_brand",
+      "parent": "Google",
+      "ancestor_chain": [
+        "Google"
+      ],
+      "graph_root": "Google",
+      "ecosystem_root": "Google",
+      "is_graph_root": false,
+      "is_ecosystem_root": false,
+      "icon_path": "icons/Google/GoogleScholar/GoogleScholar.png",
+      "icon_status": "official",
+      "canonical": true,
+      "physical_path": "icons/Google/GoogleScholar/GoogleScholar.png",
+      "physical_parent": null
+    },
+    {
       "child": "GoogleTranslate",
       "display_name": "Google Translate",
       "category": "Google",

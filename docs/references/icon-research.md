@@ -570,4 +570,12 @@ static=YouTube, Automatic, 香港, 台湾, 日本, 狮城, 美国, proxy, img-ur
 
 ---
 
+## 9. 本地维护图标的来源
+
+- **Binance**：使用 [Google Play 国际版应用](https://play.google.com/store/apps/details?id=com.binance.dev)的图标；该应用与 Binance.US 是不同的应用。保留原图黑色背景与黄色标志，并按本项目规范进行圆角处理。
+- **Google Scholar**：参考 [Google 产品目录](https://about.google/brand-resource-center/products-and-services/)中的标志，使用 [Wikimedia Commons 的重绘 SVG](https://commons.wikimedia.org/wiki/File:Google_Scholar_logo.svg)光栅化，保留标志原有颜色，并按展示要求置于留有边距的白色背景底板上，再按本项目规范处理。该 SVG 是重绘素材，并非 Google 提供的原始文件。
+- **Amazon**：沿用本仓库原有标志，在透明区域补白底，保持标志颜色、尺寸与 canonical 路径不变。
+
+上述品牌标志的商标权归各自权利人所有。
+
 *本文档基于公开搜索与社区配置整理，仅供学习参考。图标版权归原作者所有，使用前请注意各仓库的 License 声明。*

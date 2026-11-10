@@ -47,7 +47,7 @@ def describe(exc: JsonLoadError, what: str = 'JSON') -> str:
     loc = ''
     if exc.line is not None:
         loc = ' (第 %d 行第 %d 列)' % (exc.line, exc.col if exc.col is not None else 0)
-    return '%s 解析失败: %s%s — %s' % (what, exc.path, loc, exc.reason)
+    return '%s 解析失败: %s%s — %s' % (what, exc.path.as_posix(), loc, exc.reason)
 
 
 def load_json(path):

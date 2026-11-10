@@ -153,7 +153,7 @@ for p in all_pngs:
         continue
     b = p.read_bytes()
     if len(b) < 50 or not b.startswith(b'\x89PNG\r\n\x1a\n'):
-        fail('PNG integrity', '非法图标（非 PNG 或过小）: %s (size=%d)' % (p, len(b)))
+        fail('PNG integrity', '非法图标（非 PNG 或过小）: %s (size=%d)' % (p.as_posix(), len(b)))
         continue
     try:
         with Image.open(p) as im:
@@ -219,7 +219,7 @@ for brand_dir, pngs in brand_dirs.items():
 CATS_LOADED = True
 cats = []
 if not CATS_PATH.exists():
-    fail('Category', '缺少 %s（分类 SSOT）' % CATS_PATH)
+    fail('Category', '缺少 %s（分类 SSOT）' % CATS_PATH.as_posix())
 else:
     _cats_doc, _conflict = _load_json(CATS_PATH)
     if _conflict:
@@ -271,7 +271,7 @@ aliases = set()
 bdata = []
 BRANDS_LOADED = False
 if not BRANDS_PATH.exists():
-    fail('Brands SSOT', '缺少 %s（品牌 SSOT）' % BRANDS_PATH)
+    fail('Brands SSOT', '缺少 %s（品牌 SSOT）' % BRANDS_PATH.as_posix())
 else:
     _brands_doc, _conflict = _load_json(BRANDS_PATH)
     if _conflict:
@@ -354,7 +354,7 @@ else:
             # Pending ecosystem roots are semantic SSOT nodes but have no physical parent README.
             if cur not in ssot and cur not in aliases:
                 fail('Brands SSOT', 'parent_brand 链末端不存在: %s' % ' -> '.join(chain + [cur]))
-    disk_brands = {str(bd.relative_to(ICONS)) for bd in brand_dirs}
+    disk_brands = {bd.relative_to(ICONS).as_posix() for bd in brand_dirs}
     ssot_rel = {Path(e['icon_path']).parent.relative_to('icons').as_posix() for e in bdata if e.get('icon_path')}
     # SSOT 不可解析时不做「磁盘 vs SSOT」双向比对：那会把「SSOT 损坏」放大成
     # 数百条伪「磁盘品牌不在 brands.json」噪声，掩盖真正的失败原因（§6 fail-fast 归因）。
@@ -372,7 +372,7 @@ else:
 #   - 保留：URL 存在 /icons/、无 jsDelivr、文件在磁盘存在
 entries = []
 if not JSON_PATH.exists():
-    fail('Surge JSON', '缺少 %s' % JSON_PATH)
+    fail('Surge JSON', '缺少 %s' % JSON_PATH.as_posix())
 else:
     _surge_doc, _conflict = _load_json(JSON_PATH)
     if _conflict:
@@ -552,7 +552,7 @@ else:
                 brand_by_cat[e['category']] = brand_by_cat.get(e['category'], 0) + 1
             icon_by_cat = {}
             for p in all_pngs:
-                c = str(p.relative_to(ICONS)).split('/')[0]
+                c = p.relative_to(ICONS).parts[0]
                 icon_by_cat[c] = icon_by_cat.get(c, 0) + 1
             for name, nb, ni in parsed:
                 cobj = cat_by_name.get(name)
@@ -731,7 +731,7 @@ for _cid in sorted(ecosystem_category_ids(cats_doc.get('categories', []))):
 # brands.json + brand_relationships.py 生成；本组逐项重算并比对，防止手工修改或漂移。
 REL_PATH = Path('config/brand-relationships.json')
 if not REL_PATH.exists():
-    fail('关系派生导出', '缺少 %s（运行 scripts/export-brand-relationships.py）' % REL_PATH)
+    fail('关系派生导出', '缺少 %s（运行 scripts/export-brand-relationships.py）' % REL_PATH.as_posix())
 else:
     _rel = None
     _rel_doc, _conflict = _load_json(REL_PATH)
@@ -772,7 +772,7 @@ else:
 # ---------- 16. Review Queue（人工裁决队列，不得覆盖 SSOT） ----------
 RQ_PATH = Path('config/brand-review-queue.json')
 if not RQ_PATH.exists():
-    fail('Review Queue', '缺少 %s' % RQ_PATH)
+    fail('Review Queue', '缺少 %s' % RQ_PATH.as_posix())
 else:
     _rq_doc, _conflict = _load_json(RQ_PATH)
     if _conflict:
@@ -860,7 +860,7 @@ if _MASK is not None and HAVE_PIL:
     _exempt = {}
     if not MASK_EXEMPT_PATH.exists():
         fail('Rounded mask 边界', '缺少 %s（已知历史资产登记表；无豁免时为空 exemptions 数组）'
-             % MASK_EXEMPT_PATH)
+             % MASK_EXEMPT_PATH.as_posix())
     else:
         try:
             _ex_doc = json.loads(MASK_EXEMPT_PATH.read_text(encoding='utf-8'))

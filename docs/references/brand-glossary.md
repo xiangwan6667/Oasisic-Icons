@@ -1,6 +1,6 @@
 # 品牌术语表 / Brand Glossary
 > 本文件由 `config/brands.json` 派生（CI 校验一致性）。
-> 共 **298** 个品牌 / 文件夹标识。Technical ID 为目录名；Display Name 为官方真实品牌名。
+> 共 **299** 个品牌 / 文件夹标识。Technical ID 为目录名；Display Name 为官方真实品牌名。
 
 ## #
 
@@ -149,6 +149,7 @@
 | GoogleNews | Google News |
 | GooglePhotos | Google Photos |
 | GooglePlay | Google Play |
+| GoogleScholar | Google Scholar |
 | GoogleTranslate | Google Translate |
 | GoogleVoice | Google Voice |
 | Grok | Grok |

@@ -1,6 +1,6 @@
 # 🔎 Google / Google 服务与生态
 
-> 共 **12** 个图标，**12** 个品牌
+> 共 **13** 个图标，**13** 个品牌
 
 | 品牌 | 图标文件 |
 |:---|:---|
@@ -12,6 +12,7 @@
 | `GoogleNews` | `GoogleNews.png` |
 | `GooglePhotos` | `GooglePhotos.png` |
 | `GooglePlay` | `GooglePlay.png` |
+| `GoogleScholar` | `GoogleScholar.png` |
 | `GoogleTranslate` | `GoogleTranslate.png` |
 | `GoogleVoice` | `GoogleVoice.png` |
 | `YouTube` | `YouTube.png` |
@@ -28,6 +29,7 @@ Google
 ├── GoogleNews
 ├── GooglePhotos
 ├── GooglePlay
+├── GoogleScholar
 ├── GoogleTranslate
 ├── GoogleVoice
 └── YouTube

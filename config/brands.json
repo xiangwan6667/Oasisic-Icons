@@ -786,6 +786,14 @@
       "parent_brand": "Google"
     },
     {
+      "id": "GoogleScholar",
+      "display_name": "Google Scholar",
+      "category": "Google",
+      "entity_type": "product_brand",
+      "icon_path": "icons/Google/GoogleScholar/GoogleScholar.png",
+      "parent_brand": "Google"
+    },
+    {
       "id": "GoogleTranslate",
       "display_name": "Google Translate",
       "category": "Google",

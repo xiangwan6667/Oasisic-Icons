@@ -18,6 +18,6 @@ generator 产出与 validator 期望**静默分叉**（一侧改了 URL，另一
 """
 
 # 图标直链基址：所有对外 URL = ICON_RAW_BASE + '/' + 仓库内相对 icon_path
-# 例：https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/AI/Anthropic/Anthropic.png
+# 例：https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/AI/Anthropic/Anthropic.png
 # 仓库不使用 jsDelivr 等第三方 CDN（见 README「只提供 raw.githubusercontent.com 直链」）。
-ICON_RAW_BASE = 'https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main'
+ICON_RAW_BASE = 'https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main'

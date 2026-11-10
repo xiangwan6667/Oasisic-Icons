@@ -90,7 +90,7 @@ cross-category 关系共 **3** 条。
 | `ByteDance` | `ByteDance` | YES | `ByteDance` | 4 | Ecosystem |
 | `ChinaMobile` | `ChinaMobile` | YES | `ChinaMobile` | 2 | Ecosystem |
 | `Disney` | `Disney` | YES | `Disney` | 3 | Ecosystem |
-| `Google` | `Google` | YES | `Google` | 11 | Ecosystem |
+| `Google` | `Google` | YES | `Google` | 12 | Ecosystem |
 | `Meta` | `Meta` | YES | `Meta` | 5 | Ecosystem |
 | `Microsoft` | `Microsoft` | YES | `Microsoft` | 9 | Ecosystem |
 | `NBCUniversal` | `NBCUniversal` | YES | `NBCUniversal` | 2 | Ecosystem |
@@ -105,7 +105,7 @@ cross-category 关系共 **3** 条。
 
 ## 6. 统计
 
-- canonical product brands：**239**
+- canonical product brands：**240**
 - canonical ecosystem entities：**1**
 - 物理父品牌节点：**28**
 - 深层嵌套品牌（路径 ≥ 5 段）：**8**

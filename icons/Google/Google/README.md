@@ -10,7 +10,7 @@ Parent:       —
 Graph Root:   Google
 Ecosystem Root: Google
 Ancestor Chain: Google
-Direct Children: 10
+Direct Children: 11
 ```
 
 | Child | Display Name |
@@ -22,6 +22,7 @@ Direct Children: 10
 | `GoogleNews` | Google News |
 | `GooglePhotos` | Google Photos |
 | `GooglePlay` | Google Play |
+| `GoogleScholar` | Google Scholar |
 | `GoogleTranslate` | Google Translate |
 | `GoogleVoice` | Google Voice |
 | `YouTube` | YouTube |

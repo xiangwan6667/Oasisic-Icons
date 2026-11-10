@@ -80,7 +80,7 @@ class CatalogShapeTests(unittest.TestCase):
         self.assertEqual(offenders, [], "品牌目录内存在非 canonical PNG：%s" % offenders)
 
     def test_url_base_has_single_source(self):
-        literal = "raw.githubusercontent.com/Hawaiine/Oasisic-Icons"
+        literal = ICON_RAW_BASE.removeprefix("https://").rsplit("/", 1)[0]
         hits = sorted(p.name for p in SCRIPT_DIR.iterdir()
                       if p.suffix in (".py", ".sh")
                       and literal in p.read_text(encoding="utf-8", errors="ignore")

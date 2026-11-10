@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Surge/Surge/Surge.png">
-    <img src="https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Surge/Surge/Surge.png" width="120" alt="Oasisic-Icons">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Surge/Surge/Surge.png">
+    <img src="https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Surge/Surge/Surge.png" width="120" alt="Oasisic-Icons">
   </picture>
 </p>
 
@@ -17,8 +17,8 @@
   <img src="https://img.shields.io/github/stars/Hawaiine/Oasisic-Icons?style=flat-square" alt="Stars">
   <img src="https://img.shields.io/github/last-commit/Hawaiine/Oasisic-Icons?style=flat-square" alt="Last Commit">
   <img src="https://img.shields.io/github/repo-size/Hawaiine/Oasisic-Icons?style=flat-square" alt="Repo Size">
-  <img src="https://img.shields.io/badge/icons-298-blue?style=flat-square" alt="Icons Count">
-  <img src="https://img.shields.io/badge/brands-298-green?style=flat-square" alt="Brands Count">
+  <img src="https://img.shields.io/badge/icons-299-blue?style=flat-square" alt="Icons Count">
+  <img src="https://img.shields.io/badge/brands-299-green?style=flat-square" alt="Brands Count">
   <img src="https://img.shields.io/badge/categories-42-orange?style=flat-square" alt="Categories Count">
 </p>
 
@@ -35,11 +35,11 @@
 
 ## 📖 简介 / Introduction
 
-**Oasisic-Icons** 是一套专为代理工具设计的策略组图标合集：当前共 **298** 个 PNG 图标，覆盖 **298** 个品牌，归入 **42** 个一级分类（其中 41 个活跃，`Finance` 为预留空分类）。
+**Oasisic-Icons** 是一套专为代理工具设计的策略组图标合集：当前共 **299** 个 PNG 图标，覆盖 **299** 个品牌，归入 **42** 个一级分类（其中 41 个活跃，`Finance` 为预留空分类）。
 
-**仓库统计口径 / Repository metrics**：SSOT entities **298** · canonical entities **239** · icon-backed entities **298** · PNG **298** · pending no-icon entities **0** · categories **42** · ecosystems **17**
+**仓库统计口径 / Repository metrics**：SSOT entities **299** · canonical entities **240** · icon-backed entities **299** · PNG **299** · pending no-icon entities **0** · categories **42** · ecosystems **17**
 
-本项目为独立图标仓库，当前 298 个图标均为 512×512 PNG（RGBA 模式），适配 Surge、Loon、Clash Meta / Mihomo、Stash、Quantumult X、Egern 等主流代理客户端。
+本项目为独立图标仓库，当前 299 个图标均为 512×512 PNG（RGBA 模式），适配 Surge、Loon、Clash Meta / Mihomo、Stash、Quantumult X、Egern 等主流代理客户端。
 
 > **画质规范（贡献与替换标准）**：512×512 方形 PNG，RGBA 模式，Apple 风格 squircle 圆角（圆角半径 ≈ 115px / 约 22.4%），保留原始底色。
 > 仓库内图标按该规范维护，均为 512×512、RGBA、保留原始底色，经 `scripts/optimize-icons.py` 无损重压缩；少量历史圆角边缘遗留项待处理，明细与遗留项见 [`docs/references/icon-quality-notes.md`](docs/references/icon-quality-notes.md)。
@@ -107,17 +107,17 @@ icons/Media/Netflix/
 ### 1. 通用直链格式
 
 ```
-https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/<分类>/[<中间父…>/]<品牌>/<文件名>.png
+https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/<分类>/[<中间父…>/]<品牌>/<文件名>.png
 ```
 
 示例：
 
 ```
 # 默认图标
-https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
+https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
 
 # 单文件品牌
-https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Microsoft/GitHub/GitHub.png
+https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Microsoft/GitHub/GitHub.png
 ```
 
 > 本仓库只提供 `raw.githubusercontent.com` 直链，**不使用 jsDelivr 等 CDN**。
@@ -127,7 +127,7 @@ https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Microsoft/Gi
 部分客户端支持一次性导入整套图标集（图标订阅 / 策略组图标订阅），订阅地址为：
 
 ```
-https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/config/surge-icon.json
+https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/config/surge-icon.json
 ```
 
 在客户端的「策略组图标 / 图标订阅」入口中添加该 URL 即可（Loon、Stash、Egern、Clash Meta 等支持图标订阅的版本）。
@@ -139,13 +139,13 @@ https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/config/surge-icon.
 ```ini
 # Surge：icon-url 必须写在策略组同一行
 [Proxy Group]
-Netflix = select, HK, TW, JP, SG, icon-url=https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
+Netflix = select, HK, TW, JP, SG, icon-url=https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
 ```
 
 ```ini
 # Loon：img-url（不是 icon），同样写在策略组同一行
 [Proxy Group]
-Netflix = select, HK, TW, JP, SG, img-url = https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
+Netflix = select, HK, TW, JP, SG, img-url = https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
 ```
 
 ### 4. Clash Meta / Mihomo 单条示例
@@ -156,12 +156,12 @@ proxy-groups:
   - name: Netflix
     type: select
     proxies: [HK, TW, JP, SG]
-    icon: https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
+    icon: https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
 
   - name: 🎬 Media
     type: select
     proxies: [Proxy]
-    icon: https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
+    icon: https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
 ```
 
 > Mihomo / Clash Meta 的图标字段是 **`icon`（单数，字符串）**，不是复数列表，也不是 `"名称: URL"` 形式的字符串数组。
@@ -170,7 +170,7 @@ proxy-groups:
 
 ```ini
 [policy]
-static=Netflix, HK, TW, JP, SG, img-url=https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
+static=Netflix, HK, TW, JP, SG, img-url=https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/icons/Media/Netflix/Netflix.png
 ```
 
 > QX 的图标 URL 只应写在 `[policy]` 段的 `static=..., img-url=...` 里，不要使用「URL 重写 / MITM 劫持」的写法。
@@ -199,7 +199,7 @@ static=Netflix, HK, TW, JP, SG, img-url=https://raw.githubusercontent.com/Hawaii
 | 💰 Finance | 金融理财 | 0 | 0 |
 | 📱 Meta | Meta 生态 | 6 | 6 |
 | 🎮 Game | 游戏平台与服务 | 5 | 5 |
-| 🔎 Google | Google 服务与生态 | 12 | 12 |
+| 🔎 Google | Google 服务与生态 | 13 | 13 |
 | 🔌 Hardware | 硬件与消费电子设备 | 8 | 8 |
 | 🏥 Health | 健康与运动 | 1 | 1 |
 | 🦚 NBCUniversal | NBC 环球生态 | 3 | 3 |
@@ -223,7 +223,7 @@ static=Netflix, HK, TW, JP, SG, img-url=https://raw.githubusercontent.com/Hawaii
 | 🧰 Utilities | 生产力工具与实用服务 | 9 | 9 |
 | 🎞️ Warner Bros. Discovery | 华纳兄弟探索生态 | 3 | 3 |
 | 🛰️ SpaceXAI | SpaceXAI 生态 | 4 | 4 |
-| **合计** | — | **298** | **298** |
+| **合计** | — | **299** | **299** |
 ### 分类体系原则（方案 C，2026-09-29）
 
 一级分类**不设中间层**：不设置 `Ecosystems / Services / Special` 等分类之上的中间层；分类之下的深度只由**真实父子层级**决定——直接父品牌是 category 根时保持 `icons/<分类>/<品牌>/`，直接父品牌本身也是中间品牌（同类且有自身图标）时嵌套为 `icons/<分类>/<中间父>/<品牌>/`。
@@ -289,7 +289,7 @@ static=Netflix, HK, TW, JP, SG, img-url=https://raw.githubusercontent.com/Hawaii
 **订阅地址（建议用 `raw.githubusercontent.com`，不要用 jsDelivr）：**
 
 ```
-https://raw.githubusercontent.com/Hawaiine/Oasisic-Icons/main/config/surge-icon.json
+https://raw.githubusercontent.com/xiangwan6667/Oasisic-Icons/main/config/surge-icon.json
 ```
 
 本地也可直接使用 `icons/` 目录下的 PNG。
